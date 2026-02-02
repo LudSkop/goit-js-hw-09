@@ -3,6 +3,7 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import commonjs from '@rollup/plugin-commonjs';
 
 export default defineConfig(({ command }) => {
   return {
@@ -33,6 +34,11 @@ export default defineConfig(({ command }) => {
             return 'assets/[name]-[hash][extname]';
           },
         },
+        plugins: [
+          commonjs({
+            include: /node_modules/,
+          }),
+        ],
       },
       outDir: '../dist',
       emptyOutDir: true,
@@ -43,6 +49,7 @@ export default defineConfig(({ command }) => {
       SortCss({
         sort: 'mobile-first',
       }),
+      commonjs(),
     ],
   };
 });
