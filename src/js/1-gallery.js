@@ -1,5 +1,4 @@
-
-import SimpleLightbox from "simplelightbox";
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm.js";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 
@@ -85,7 +84,7 @@ const galleryMarkup = images.map(image => `<li class="gallery-item">
 
 galleryContainer.insertAdjacentHTML("beforeend",galleryMarkup);
 console.log(galleryContainer);
-const lightbox = new SimpleLightbox('.gallery-link', {
+const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
 });
