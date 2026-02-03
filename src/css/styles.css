@@ -123,6 +123,56 @@ img {
     width: calc((100% - 48px) / 3);
 
 }
+/*  form */
+.feedback-form {
+  width: 400px;
+  margin: 80px auto 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+}
 
 
 
