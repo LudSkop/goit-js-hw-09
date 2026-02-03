@@ -51,5 +51,6 @@ export default defineConfig(({ command }) => {
       }),
       commonjs(),
     ],
+     base: '/goit-js-hw-09/',
   };
 });
