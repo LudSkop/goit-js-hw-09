@@ -1,4 +1,4 @@
-formData = {
+ const formData = {
     email: "",
     message: "",
 }
